@@ -23,33 +23,45 @@
 #
 # ---------------------------------------------------------------------------
 
-CC		=  gcc
-AR              =  ar
-CFLAGS	        += -std=c99 -Wall -Werror -g
-ARFLAGS         =  rvs
+CC		    =  gcc
+AR          =  ar
+CFLAGS	    += -std=c99 -Wall -g
+ARFLAGS     =  rvs
 INCLUDES	= -I.
 LDFLAGS 	= -L.
-OPTFLAGS	=  #-O3 
+OPTFLAGS	= -O2 -DNDEBUG 
+LIBS        = -lpthread
+BINDIR      = .
 
-TARGETS		= client    \
-		  server
 
-.PHONY: all clean cleanall
+TARGETS		= syncbuffer-test
+
+
+.PHONY: all clean cleanall test1
 .SUFFIXES: .c .h
 
 %: %.c
-	$(CC) $(CFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $< $(LDFLAGS)
+	$(CC) $(CFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $< $(LDFLAGS) $(LIBS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) $(OPTFLAGS) -c -o $@ $<
 
-all	: $(TARGETS)
+all		: $(TARGETS)
 
+syncbuffer-test: syncbuffer-test.o syncbuffer.a
+	$(CC) $(CCFLAGS) $(INCLUDES) $(OPTFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
+
+#dipendeze della libreria
+syncbuffer.a: syncbuffer.o syncbuffer.h
+	$(AR) $(ARFLAGS) $@ $<
+
+#per eseguire il test1
+test1: 
+	@echo "Avvio test del codice...\n"
+	@./syncbuffer-test -p 5 -c 5
 
 clean		: 
 	rm -f $(TARGETS)
 cleanall	: clean
-	\rm -f *.o *~
-
-
+	\rm -f *.o *~ *.a
 
