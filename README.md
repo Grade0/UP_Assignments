@@ -1,5 +1,5 @@
 # UP_Assignments
-"Unix Programminh" Class Assignments - University College Dublin
+"Unix Programming" Class Assignments - ERASMUS+ Exchange @ University College Dublin
 
 ## Assignment 01 - I/O
 
