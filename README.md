@@ -24,21 +24,21 @@ The odd and even line printing maybe a little bazaar and generally useless, but 
 <br>  
 
 ## Assignment 02 - Simple shell
-https://github.com/Grade0/UP_Assignments/blob/main/assign2/Assignment_2.pdf
+**Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assign2/Assignment_2.pdf)]
 <br>  
 
 ## Assignment 03 - Thread and socket
-https://github.com/Grade0/UP_Assignments/blob/main/assign3/Assignment3.pdf
+**Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assign3/Assignment3.pdf)]
 <br>  
 
 ## Assignment 04 - Bash script
-https://github.com/Grade0/UP_Assignments/blob/main/assign4/Assignment4_COMP20200.pdf
+**Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assign4/Assignment4_COMP20200.pdf)]
 <br>  
 
 ## Assignment 05 - Python script
-https://github.com/Grade0/UP_Assignments/blob/main/assign5/Assignment_5.pdf
+**Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assign5/Assignment_5.pdf)]
 <br>  
 
 ## Assignment EXTRA - Concurrent synchronous buffer
-https://github.com/Grade0/UP_Assignments/blob/main/assignm_extra/EsercizioBufferSincrono.pdf
+**Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assignm_extra/EsercizioBufferSincrono.pdf)]
 <br>  
