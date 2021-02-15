@@ -21,7 +21,7 @@ Options :
 -e|-o print even|odd lines.
 
 The odd and even line printing maybe a little bazaar and generally useless, but it is there to test your programming. If -n 20, then your program should output 20 lines (eg. half of the first|last 40 lines). Number the first line of the file as 1 when calculating odd and even.
-<br>  
+<br><br>  
 
 ## Assignment 02 - Simple shell
 **Description:** [[PDF](https://github.com/Grade0/UP_Assignments/blob/main/assign2/Assignment_2.pdf)]
